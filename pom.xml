@@ -1,0 +1,185 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>FirstPOM</groupId>
+	<artifactId>POMTest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>POMTest</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>8</source>
+					<target>8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>${testNGSuit}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.0.0-alpha-3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.0.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.10</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.14.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>3.141.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-api</artifactId>
+			<version>3.141.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>3.141.5</version>
+		</dependency>
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>6.1.0</version>
+		</dependency>
+		<dependency>
+    <groupId>com.github.javafaker</groupId>
+    <artifactId>javafaker</artifactId>
+    <version>1.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>6.1.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>6.1.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>6.1.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>13.0.0</version>
+</dependency>
+
+	</dependencies>
+
+	<profiles>
+
+		<profile>
+			<id>ContactUS</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>envirnment</name>
+					<value>ContactUS</value>
+				</property>
+			</activation>
+			<properties>
+				<testNGSuit>ContactUS.xml</testNGSuit>
+			</properties>
+		</profile>
+		<profile>
+			<id>MyAccount</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>envirnment</name>
+					<value>MyAccount</value>
+				</property>
+			</activation>
+			<properties>
+				<testNGSuit>MyAccount.xml</testNGSuit>
+			</properties>
+		</profile>
+		<profile>
+			<id>RegisterDDTUsingDataProvider</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>envirnment</name>
+					<value>RegisterDDTUsingDataProvider</value>
+				</property>
+			</activation>
+			<properties>
+				<testNGSuit>RegisterDDTUsingDataProvider.xml</testNGSuit>
+			</properties>
+		</profile>
+				<profile>
+			<id>RegisterDDTUsingPropertiesFile</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>envirnment</name>
+					<value>RegisterDDTUsingPropertiesFile</value>
+				</property>
+			</activation>
+			<properties>
+				<testNGSuit>RegisterDDTUsingPropertiesFile.xml</testNGSuit>
+			</properties>
+		</profile>
+	</profiles>
+</project>

@@ -1,0 +1,13 @@
+Test/TestBase.class
+Test/UserLoginTest.class
+Test/SearchPageTest.class
+Test/UserLogoutTest.class
+Test/ContactUSTest.class
+Test/UserRegistrationTest.class
+Test/UserRegistrationTestDDTUsingFakerLibrary.class
+Test/UserRegistrationTestDDTUsingPropertiesFile.class
+utilities/Helper.class
+Test/ChangePassword.class
+Test/UserRegistrationTestDDTUsingDataProvider.class
+data/LoadProperties.class
+Test/MyAccountTest.class
