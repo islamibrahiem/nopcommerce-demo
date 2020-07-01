@@ -181,5 +181,6 @@
 				<testNGSuit>RegisterDDTUsingPropertiesFile.xml</testNGSuit>
 			</properties>
 		</profile>
+			
 	</profiles>
 </project>
