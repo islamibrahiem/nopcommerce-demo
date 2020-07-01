@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-nopCommerce_Regression_Suite" class="navigator-link ">
-                    <span>RegisterDDTUsingFakerLibrary.xml</span>
+                    <span>MyAccount.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,12 @@
                     <div class="method-list-content passed suite-nopCommerce_Regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-nopCommerce_Regression_Suite" title="Test.UserRegistrationTestDDTUsingFakerLibrary" class="method navigator-link" hash-for-method="closeTheNotification_test">closeTheNotification_test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-nopCommerce_Regression_Suite" title="Test.UserLoginTest" class="method navigator-link" hash-for-method="UserLogin">UserLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-nopCommerce_Regression_Suite" title="Test.UserRegistrationTestDDTUsingFakerLibrary" class="method navigator-link" hash-for-method="userLogout">userLogout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-nopCommerce_Regression_Suite" title="Test.UserRegistrationTestDDTUsingFakerLibrary" class="method navigator-link" hash-for-method="userRegistration">userRegistration</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-nopCommerce_Regression_Suite" title="Test.MyAccountTest" class="method navigator-link" hash-for-method="openUserAccount">openUserAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-nopCommerce_Regression_Suite -->
@@ -130,28 +125,29 @@
           <div class="suite-nopCommerce_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Test.UserRegistrationTestDDTUsingFakerLibrary</span>
+              <span class="class-name">Test.MyAccountTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="closeTheNotification_test">
-                  </a> <!-- closeTheNotification_test -->
-                  <span class="method-name">closeTheNotification_test</span>
+                  <a name="openUserAccount">
+                  </a> <!-- openUserAccount -->
+                  <span class="method-name">openUserAccount</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-nopCommerce_Regression_Suite-class-passed -->
+          <div class="suite-nopCommerce_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.UserLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="userLogout">
-                  </a> <!-- userLogout -->
-                  <span class="method-name">userLogout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="userRegistration">
-                  </a> <!-- userRegistration -->
-                  <span class="method-name">userRegistration</span>
+                  <a name="UserLogin">
+                  </a> <!-- UserLogin -->
+                  <span class="method-name">UserLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +155,7 @@
         </div> <!-- panel nopCommerce_Regression_Suite -->
         <div panel-name="test-xml-nopCommerce_Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/islam/PC/eclipse-workspace/BaseProject/RegisterDDTUsingFakerLibrary.xml</span>
+            <span class="header-content">/home/islam/PC/eclipse-workspace/BaseProject/MyAccount.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -169,7 +165,8 @@
   &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Regression Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Test.UserRegistrationTestDDTUsingFakerLibrary&quot;/&gt;
+      &lt;class name=&quot;Test.UserLoginTest&quot;/&gt;
+      &lt;class name=&quot;Test.MyAccountTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression Test --&gt;
 &lt;/suite&gt; &lt;!-- nopCommerce Regression Suite --&gt;
@@ -183,7 +180,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regression Test (1 class)</span>
+                <span class="test-name">Regression Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,24 +206,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'userRegistration')
-data.setCell(0, 2, 'Test.UserRegistrationTestDDTUsingFakerLibrary')
-data.setCell(0, 3, 9340);
+data.setCell(0, 1, 'UserLogin')
+data.setCell(0, 2, 'Test.UserLoginTest')
+data.setCell(0, 3, 6628);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'userLogout')
-data.setCell(1, 2, 'Test.UserRegistrationTestDDTUsingFakerLibrary')
-data.setCell(1, 3, 5795);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'closeTheNotification_test')
-data.setCell(2, 2, 'Test.UserRegistrationTestDDTUsingFakerLibrary')
-data.setCell(2, 3, 292);
+data.setCell(1, 1, 'openUserAccount')
+data.setCell(1, 2, 'Test.MyAccountTest')
+data.setCell(1, 3, 5029);
 window.suiteTableData['nopCommerce_Regression_Suite']= { tableData: data, tableDiv: 'times-div-nopCommerce_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-nopCommerce_Regression_Suite">
               </div> <!-- times-div-nopCommerce_Regression_Suite -->
             </div> <!-- times-div -->
@@ -241,9 +234,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-nopCommerce_Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Test.MyAccountTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openURL</span>
+                <br/>
+                <span class="ignored-method-name">closeBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-nopCommerce_Regression_Suite" class="panel">
@@ -252,46 +254,52 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Test.UserRegistrationTestDDTUsingFakerLibrary</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Test.UserLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">openURL(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">37720 ms</span>
+                <span class="method-start">13885 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">userRegistration</span>
-                <span class="method-start">37813 ms</span>
+                <span class="method-name">UserLogin</span>
+                <span class="method-start">13999 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenshotOnfailure([TestResult name=userRegistration status=SUCCESS method=UserRegistrationTestDDTUsingFakerLibrary.use...)</span>
-                <span class="method-start">47154 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">closeTheNotification_test</span>
-                <span class="method-start">47160 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">screenshotOnfailure([TestResult name=closeTheNotification_test status=SUCCESS method=UserRegistrationTestDDTUsingFakerLi...)</span>
-                <span class="method-start">47453 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">userLogout</span>
-                <span class="method-start">47454 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">screenshotOnfailure([TestResult name=userLogout status=SUCCESS method=UserRegistrationTestDDTUsingFakerLibrary.userLogou...)</span>
-                <span class="method-start">53250 ms</span>
+                <span class="method-name">screenshotOnfailure([TestResult name=UserLogin status=SUCCESS method=UserLoginTest.UserLogin()[pri:0, instance:Test.User...)</span>
+                <span class="method-start">20632 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">53253 ms</span>
+                <span class="method-start">20638 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.MyAccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">20647 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">openUserAccount</span>
+                <span class="method-start">20653 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnfailure([TestResult name=openUserAccount status=SUCCESS method=MyAccountTest.openUserAccount()[pri:0, instan...)</span>
+                <span class="method-start">25683 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">25684 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.UserLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">53321 ms</span>
+                <span class="method-start">25719 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

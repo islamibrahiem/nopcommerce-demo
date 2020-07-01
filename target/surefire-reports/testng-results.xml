@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-01T13:14:29 EET" name="nopCommerce Regression Suite" finished-at="2020-07-01T13:14:44 EET" duration-ms="15567">
+  <suite started-at="2020-07-01T14:14:29 EET" name="nopCommerce Regression Suite" finished-at="2020-07-01T14:14:41 EET" duration-ms="11824">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Test.MyAccountTest@345965f2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Test.UserLoginTest@6591f517]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2020-07-01T13:14:29 EET" name="Regression Test" finished-at="2020-07-01T13:14:44 EET" duration-ms="15567">
-      <class name="Test.UserRegistrationTestDDTUsingFakerLibrary">
-        <test-method is-config="true" signature="openURL(java.lang.String)[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" started-at="2020-07-01T13:13:51 EET" name="openURL" finished-at="2020-07-01T13:14:29 EET" duration-ms="37694" status="PASS">
+    <test started-at="2020-07-01T14:14:29 EET" name="Regression Test" finished-at="2020-07-01T14:14:41 EET" duration-ms="11824">
+      <class name="Test.UserLoginTest">
+        <test-method is-config="true" signature="openURL(java.lang.String)[pri:0, instance:Test.UserLoginTest@6591f517]" started-at="2020-07-01T14:14:15 EET" name="openURL" finished-at="2020-07-01T14:14:29 EET" duration-ms="13860" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,64 +22,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURL -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" started-at="2020-07-01T13:14:29 EET" name="setUpClass" finished-at="2020-07-01T13:14:29 EET" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Test.UserLoginTest@6591f517]" started-at="2020-07-01T14:14:29 EET" name="setUpClass" finished-at="2020-07-01T14:14:29 EET" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="userRegistration()[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" started-at="2020-07-01T13:14:29 EET" name="userRegistration" finished-at="2020-07-01T13:14:38 EET" duration-ms="9340" status="PASS">
+        <test-method signature="UserLogin()[pri:0, instance:Test.UserLoginTest@6591f517]" started-at="2020-07-01T14:14:29 EET" name="UserLogin" finished-at="2020-07-01T14:14:35 EET" duration-ms="6628" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userRegistration -->
-        <test-method is-config="true" signature="screenshotOnfailure(org.testng.ITestResult)[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" started-at="2020-07-01T13:14:38 EET" name="screenshotOnfailure" finished-at="2020-07-01T13:14:38 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- UserLogin -->
+        <test-method is-config="true" signature="screenshotOnfailure(org.testng.ITestResult)[pri:0, instance:Test.UserLoginTest@6591f517]" started-at="2020-07-01T14:14:35 EET" name="screenshotOnfailure" finished-at="2020-07-01T14:14:35 EET" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userRegistration status=SUCCESS method=UserRegistrationTestDDTUsingFakerLibrary.userRegistration()[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838] output={null}]]]>
+                <![CDATA[[TestResult name=UserLogin status=SUCCESS method=UserLoginTest.UserLogin()[pri:0, instance:Test.UserLoginTest@6591f517] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnfailure -->
-        <test-method signature="closeTheNotification_test()[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" started-at="2020-07-01T13:14:38 EET" name="closeTheNotification_test" finished-at="2020-07-01T13:14:38 EET" depends-on-methods="Test.UserRegistrationTestDDTUsingFakerLibrary.userRegistration" duration-ms="292" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheNotification_test -->
-        <test-method is-config="true" signature="screenshotOnfailure(org.testng.ITestResult)[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" started-at="2020-07-01T13:14:38 EET" name="screenshotOnfailure" finished-at="2020-07-01T13:14:38 EET" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=closeTheNotification_test status=SUCCESS method=UserRegistrationTestDDTUsingFakerLibrary.closeTheNotification_test()[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnfailure -->
-        <test-method signature="userLogout()[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" started-at="2020-07-01T13:14:38 EET" name="userLogout" finished-at="2020-07-01T13:14:44 EET" depends-on-methods="Test.UserRegistrationTestDDTUsingFakerLibrary.closeTheNotification_test" duration-ms="5795" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLogout -->
-        <test-method is-config="true" signature="screenshotOnfailure(org.testng.ITestResult)[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" started-at="2020-07-01T13:14:44 EET" name="screenshotOnfailure" finished-at="2020-07-01T13:14:44 EET" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userLogout status=SUCCESS method=UserRegistrationTestDDTUsingFakerLibrary.userLogout()[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnfailure -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" started-at="2020-07-01T13:14:44 EET" name="tearDownClass" finished-at="2020-07-01T13:14:44 EET" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Test.UserLoginTest@6591f517]" started-at="2020-07-01T14:14:35 EET" name="tearDownClass" finished-at="2020-07-01T14:14:36 EET" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.UserRegistrationTestDDTUsingFakerLibrary@cf67838]" started-at="2020-07-01T13:14:44 EET" name="closeBrowser" finished-at="2020-07-01T13:14:44 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.UserLoginTest@6591f517]" started-at="2020-07-01T14:14:41 EET" name="closeBrowser" finished-at="2020-07-01T14:14:41 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- Test.UserRegistrationTestDDTUsingFakerLibrary -->
+      </class> <!-- Test.UserLoginTest -->
+      <class name="Test.MyAccountTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Test.MyAccountTest@345965f2]" started-at="2020-07-01T14:14:36 EET" name="setUpClass" finished-at="2020-07-01T14:14:36 EET" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="openUserAccount()[pri:0, instance:Test.MyAccountTest@345965f2]" started-at="2020-07-01T14:14:36 EET" name="openUserAccount" finished-at="2020-07-01T14:14:41 EET" duration-ms="5029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUserAccount -->
+        <test-method is-config="true" signature="screenshotOnfailure(org.testng.ITestResult)[pri:0, instance:Test.MyAccountTest@345965f2]" started-at="2020-07-01T14:14:41 EET" name="screenshotOnfailure" finished-at="2020-07-01T14:14:41 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openUserAccount status=SUCCESS method=MyAccountTest.openUserAccount()[pri:0, instance:Test.MyAccountTest@345965f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnfailure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Test.MyAccountTest@345965f2]" started-at="2020-07-01T14:14:41 EET" name="tearDownClass" finished-at="2020-07-01T14:14:41 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Test.MyAccountTest -->
     </test> <!-- Regression Test -->
   </suite> <!-- nopCommerce Regression Suite -->
 </testng-results>
