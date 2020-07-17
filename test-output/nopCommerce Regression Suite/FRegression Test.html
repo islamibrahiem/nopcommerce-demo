@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Regression Test</title>
+<title>TestNG:  FRegression Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Regression Test</h2><table border='1' align="center">
+<h2 align='center'>FRegression Test</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 05 18:48:37 EET 2020</td>
+<td>Started on:</td><td>Sun Jul 05 19:04:36 EET 2020</td>
 </tr>
-<tr><td>Total time:</td><td>60 seconds (60151 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7518 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,37 +76,34 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Test.UserRegistrationParallelTesting.userRegistration()'><b>userRegistration</b><br>Test class: Test.UserRegistrationParallelTesting</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: .content
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=83.0.4103.116)
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
 System info: host: &apos;islam-Inspiron-5570&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-40-generic&apos;, java.version: &apos;14.0.1&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 6187, moz:profile: /tmp/rust_mozprofileFLWlU8, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.4.0-40-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1cf14564-abe4-49e9-bd94-29b...}
-Session ID: 1cf14564-abe4-49e9-bd94-29b6b0261424
-*** Element info: {Using=class name, value=content}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.kCLUJB}, goog:chromeOptions: {debuggerAddress: localhost:39313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 03d7752d92dd3bea73d5ddcf5b9...}
+Session ID: 03d7752d92dd3bea73d5ddcf5b9e2c6b
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.getText(Unknown Source)
-	at Test.UserRegistrationParallelTesting.userRegistration(UserRegistrationParallelTesting.java:34)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at Pages.PageBase.clickButton(PageBase.java:22)
+	at Pages.HomePage.pressOnRegisterLink(HomePage.java:62)
+	at Test.UserRegistrationParallelTesting.userRegistration(UserRegistrationParallelTesting.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1588330347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1588330347'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: .content
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12952277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12952277'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=83.0.4103.116)
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
 System info: host: &apos;islam-Inspiron-5570&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-40-generic&apos;, java.version: &apos;14.0.1&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 6187, moz:profile: /tmp/rust_mozprofileFLWlU8, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.4.0-40-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1cf14564-abe4-49e9-bd94-29b...}
-Session ID: 1cf14564-abe4-49e9-bd94-29b6b0261424
-*** Element info: {Using=class name, value=content}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.kCLUJB}, goog:chromeOptions: {debuggerAddress: localhost:39313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 03d7752d92dd3bea73d5ddcf5b9...}
+Session ID: 03d7752d92dd3bea73d5ddcf5b9e2c6b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -117,14 +114,17 @@ Session ID: 1cf14564-abe4-49e9-bd94-29b6b0261424
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.getText(Unknown Source)
-	at Test.UserRegistrationParallelTesting.userRegistration(UserRegistrationParallelTesting.java:34)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at Pages.PageBase.clickButton(PageBase.java:22)
+	at Pages.HomePage.pressOnRegisterLink(HomePage.java:62)
+	at Test.UserRegistrationParallelTesting.userRegistration(UserRegistrationParallelTesting.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -154,7 +154,7 @@ Session ID: 1cf14564-abe4-49e9-bd94-29b6b0261424
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>9</td>
+<td>2</td>
 <td>Test.UserRegistrationParallelTesting@34b27915</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -168,8 +168,8 @@ Session ID: 1cf14564-abe4-49e9-bd94-29b6b0261424
 <td title='Test.UserRegistrationParallelTesting.closeTheNotification_test()'><b>closeTheNotification_test</b><br>Test class: Test.UserRegistrationParallelTesting</td>
 <td><div><pre>java.lang.Throwable: Method UserRegistrationParallelTesting.closeTheNotification_test()[pri:0, instance:Test.UserRegistrationParallelTesting@34b27915] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1329043305", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1329043305'><pre>java.lang.Throwable: Method UserRegistrationParallelTesting.closeTheNotification_test()[pri:0, instance:Test.UserRegistrationParallelTesting@34b27915] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace811106744", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace811106744'><pre>java.lang.Throwable: Method UserRegistrationParallelTesting.closeTheNotification_test()[pri:0, instance:Test.UserRegistrationParallelTesting@34b27915] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -196,8 +196,8 @@ Session ID: 1cf14564-abe4-49e9-bd94-29b6b0261424
 <td title='Test.UserRegistrationParallelTesting.userLogout()'><b>userLogout</b><br>Test class: Test.UserRegistrationParallelTesting</td>
 <td><div><pre>java.lang.Throwable: Method UserRegistrationParallelTesting.userLogout()[pri:0, instance:Test.UserRegistrationParallelTesting@34b27915] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1263623851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1263623851'><pre>java.lang.Throwable: Method UserRegistrationParallelTesting.userLogout()[pri:0, instance:Test.UserRegistrationParallelTesting@34b27915] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1807899330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1807899330'><pre>java.lang.Throwable: Method UserRegistrationParallelTesting.userLogout()[pri:0, instance:Test.UserRegistrationParallelTesting@34b27915] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)

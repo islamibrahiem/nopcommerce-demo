@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [nopCommerce Regression Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="FRegression Test(failed)">
     <classes>
-      <class name="runner.TestRunner">
+      <class name="Test.UserRegistrationParallelTesting">
         <methods>
-          <include name="openURL"/>
-          <include name="screenshotOnfailure"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="closeBrowser"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
+          <include name="userRegistration"/>
+          <include name="stopDriver"/>
+          <include name="setUp"/>
+          <include name="closeTheNotification_test"/>
+          <include name="userLogout"/>
         </methods>
-      </class> <!-- runner.TestRunner -->
+      </class> <!-- Test.UserRegistrationParallelTesting -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- FRegression Test(failed) -->
+  <test thread-count="5" name="CRegression Test(failed)">
+    <classes>
+      <class name="Test.UserRegistrationParallelTesting">
+        <methods>
+          <include name="userRegistration"/>
+          <include name="stopDriver"/>
+          <include name="setUp"/>
+          <include name="closeTheNotification_test"/>
+          <include name="userLogout"/>
+        </methods>
+      </class> <!-- Test.UserRegistrationParallelTesting -->
+    </classes>
+  </test> <!-- CRegression Test(failed) -->
+</suite> <!-- Failed suite [nopCommerce Regression Suite] -->
