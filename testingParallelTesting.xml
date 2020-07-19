@@ -9,7 +9,7 @@
     <parameter name="browser" value="chrome"></parameter>
   <test name="CRegression Test" preserve-order="true">
     <classes>
-      <class name="Test.UserRegistrationParallelTesting"/>    
+      <class name="Test.ContactUSinParallel"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
