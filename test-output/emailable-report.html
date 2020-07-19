@@ -9,66 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">nopCommerce Regression Suite</th></tr>
-<tr><td><a href="#t0">FRegression Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,518</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">CRegression Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,370</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num attn">4</th><th class="num">0</th><th class="num attn">2</th><th class="num">14,888</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">FirefoxRegression Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">43,768</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">nopCommerce Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">FRegression Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test.UserRegistrationParallelTesting</td><td><a href="#m0">userRegistration</a></td><td rowspan="1">1593968681337</td><td rowspan="1">2286</td></tr><tr><th colspan="4">FRegression Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">Test.UserRegistrationParallelTesting</td><td><a href="#m1">closeTheNotification_test</a></td><td rowspan="1">1593968683630</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">userLogout</a></td><td rowspan="1">1593968683635</td><td rowspan="1">1</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">CRegression Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test.UserRegistrationParallelTesting</td><td><a href="#m3">userRegistration</a></td><td rowspan="1">1593968688802</td><td rowspan="1">2255</td></tr><tr><th colspan="4">CRegression Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">Test.UserRegistrationParallelTesting</td><td><a href="#m4">closeTheNotification_test</a></td><td rowspan="1">1593968691060</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">userLogout</a></td><td rowspan="1">1593968691065</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">nopCommerce Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">FirefoxRegression Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Test.ContactUSinParallel</td><td><a href="#m0">insertTheINFtoContactUs</a></td><td rowspan="1">1595182747935</td><td rowspan="1">5348</td></tr></tbody>
 </table>
-<h2>FRegression Test</h2><h3 id="m0">Test.UserRegistrationParallelTesting#userRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=83.0.4103.116)
-Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;islam-Inspiron-5570&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-40-generic&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.kCLUJB}, goog:chromeOptions: {debuggerAddress: localhost:39313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 03d7752d92dd3bea73d5ddcf5b9...}
-Session ID: 03d7752d92dd3bea73d5ddcf5b9e2c6b
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at Pages.PageBase.clickButton(PageBase.java:22)
-	at Pages.HomePage.pressOnRegisterLink(HomePage.java:62)
-	at Test.UserRegistrationParallelTesting.userRegistration(UserRegistrationParallelTesting.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Test.UserRegistrationParallelTesting#closeTheNotification_test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method UserRegistrationParallelTesting.closeTheNotification_test()[pri:0, instance:Test.UserRegistrationParallelTesting@34b27915] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Test.UserRegistrationParallelTesting#userLogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method UserRegistrationParallelTesting.userLogout()[pri:0, instance:Test.UserRegistrationParallelTesting@34b27915] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>CRegression Test</h2><h3 id="m3">Test.UserRegistrationParallelTesting#userRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=83.0.4103.116)
-Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;islam-Inspiron-5570&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-40-generic&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.Y4zbDH}, goog:chromeOptions: {debuggerAddress: localhost:34583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 018b7e0a9a1ef9c1b06ec32f942...}
-Session ID: 018b7e0a9a1ef9c1b06ec32f9421e937
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at Pages.PageBase.clickButton(PageBase.java:22)
-	at Pages.HomePage.pressOnRegisterLink(HomePage.java:62)
-	at Test.UserRegistrationParallelTesting.userRegistration(UserRegistrationParallelTesting.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Test.UserRegistrationParallelTesting#closeTheNotification_test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method UserRegistrationParallelTesting.closeTheNotification_test()[pri:0, instance:Test.UserRegistrationParallelTesting@1152900] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Test.UserRegistrationParallelTesting#userLogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method UserRegistrationParallelTesting.userLogout()[pri:0, instance:Test.UserRegistrationParallelTesting@1152900] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FirefoxRegression Test</h2><h3 id="m0">Test.ContactUSinParallel#insertTheINFtoContactUs</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
