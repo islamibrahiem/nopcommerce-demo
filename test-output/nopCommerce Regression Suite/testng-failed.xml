@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [nopCommerce Regression Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="ChromeRegression Test(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite name="Failed suite [nopCommerce Regression Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="FRegression Test(failed)">
     <classes>
-      <class name="Test.ContactUSinParallel">
+      <class name="Test.UserRegistrationParallelTesting">
         <methods>
+          <include name="userRegistration"/>
           <include name="stopDriver"/>
           <include name="setUp"/>
-          <include name="insertTheINFtoContactUs"/>
+          <include name="closeTheNotification_test"/>
+          <include name="userLogout"/>
         </methods>
-      </class> <!-- Test.ContactUSinParallel -->
+      </class> <!-- Test.UserRegistrationParallelTesting -->
     </classes>
-  </test> <!-- ChromeRegression Test(failed) -->
-  <test thread-count="2" parallel="tests" name="FirefoxRegression Test(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="Test.ContactUSinParallel">
-        <methods>
-          <include name="stopDriver"/>
-          <include name="setUp"/>
-          <include name="insertTheINFtoContactUs"/>
-        </methods>
-      </class> <!-- Test.ContactUSinParallel -->
-    </classes>
-  </test> <!-- FirefoxRegression Test(failed) -->
+  </test> <!-- FRegression Test(failed) -->
 </suite> <!-- Failed suite [nopCommerce Regression Suite] -->
