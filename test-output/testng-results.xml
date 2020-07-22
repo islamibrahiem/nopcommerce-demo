@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-19T20:42:59 EET" name="nopCommerce Regression Suite" finished-at="2020-07-19T20:43:37 EET" duration-ms="38167">
+  <suite started-at="2020-07-22T13:17:30 EET" name="nopCommerce Regression Suite" finished-at="2020-07-22T13:18:20 EET" duration-ms="50624">
     <groups>
     </groups>
-    <test started-at="2020-07-19T20:42:59 EET" name="FirefoxRegression Test" finished-at="2020-07-19T20:43:37 EET" duration-ms="38167">
+    <test started-at="2020-07-22T13:17:30 EET" name="FirefoxRegression Test" finished-at="2020-07-22T13:18:20 EET" duration-ms="50624">
       <class name="Test.ContactUSinParallel">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.ContactUSinParallel@5db45159]" started-at="2020-07-19T20:42:59 EET" name="setUp" finished-at="2020-07-19T20:43:19 EET" duration-ms="20139" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.ContactUSinParallel@5db45159]" started-at="2020-07-22T13:17:30 EET" name="setUp" finished-at="2020-07-22T13:17:55 EET" duration-ms="25076" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="insertTheINFtoContactUs()[pri:0, instance:Test.ContactUSinParallel@5db45159]" started-at="2020-07-19T20:43:19 EET" name="insertTheINFtoContactUs" finished-at="2020-07-19T20:43:25 EET" duration-ms="6136" status="PASS">
+        <test-method signature="insertTheINFtoContactUs()[pri:0, instance:Test.ContactUSinParallel@5db45159]" started-at="2020-07-22T13:17:55 EET" name="insertTheINFtoContactUs" finished-at="2020-07-22T13:18:01 EET" duration-ms="6217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- insertTheINFtoContactUs -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:Test.ContactUSinParallel@5db45159]" started-at="2020-07-19T20:43:25 EET" name="stopDriver" finished-at="2020-07-19T20:43:37 EET" duration-ms="11866" status="PASS">
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:Test.ContactUSinParallel@5db45159]" started-at="2020-07-22T13:18:01 EET" name="stopDriver" finished-at="2020-07-22T13:18:20 EET" duration-ms="19308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
