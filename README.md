@@ -1,4 +1,11 @@
 # nopcommerce-demo
-selenium framework project using  Eclipse,JAVA,Maven,Testng
+selenium framework project for nopcommerce-demo
 
-we are Using BDD and DDT framework
+# using  
+       - JAVA
+       - Maven
+       - Testng
+       - POM Pattern
+       - Data Driven Framework
+       - Behaviour Driven Test
+       - Allure Reports
