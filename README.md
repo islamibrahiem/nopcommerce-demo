@@ -1,5 +1,5 @@
 # nopcommerce-demo
-selenium framework project for nopcommerce-demo
+Selenium framework for nopcommerce-demo Website
 
 # using  
        - JAVA
